@@ -9,3 +9,13 @@
 
 Comando "yarn install" no terminal para gerar a pasta node_modules, depois "expo start" para iniciar o projeto.
 
+# Rodando o projeto no ANDROID
+
+- Baixar o Aplicativo na Play Store chamado "Expo" ou "Expo Go".
+- Entrar no site https://expo.dev/@leopegomartins/appHinova
+- Entrar no aplicativo e escanear o qrcode do site acima.
+
+# Rodando o projeto no IOS / Iphone
+
+Obs: por conta de uma politica da Apple na hora da publicação do app, só as pessoas que eu der permissão vão conseguir ver o app funcionando no iphone, 
+então só entrar em contato comigo que eu dou as permissões p rodar.
