@@ -1,7 +1,6 @@
 import React from "react";
 import { Text } from "react-native";
 import DetailsCard from "../../components/DetailsCard";
-import { removeBarFromText } from "../../utils";
 import {
   ContainerDetails,
   Description,
@@ -16,8 +15,6 @@ const OficinaDetailsScreen = ({ route }: any) => {
   const { Nome, Descricao, Endereco, Email, Telefone1, Telefone2 } =
     route.params;
 
-  const DescricaoFiltered = removeBarFromText(Descricao);
-
   return (
     <ContainerDetails>
       <ImagesContainer>
@@ -25,7 +22,7 @@ const OficinaDetailsScreen = ({ route }: any) => {
       </ImagesContainer>
       <InformationContainer>
         <Title>{Nome}</Title>
-        <Description>{DescricaoFiltered}</Description>
+        <Description>{Descricao}</Description>
         <Separator />
         <DetailsCard title={Endereco} icon="Localizacao" />
         <DetailsCard title={Email} icon="Email" />
