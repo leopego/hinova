@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 
-import { FlatList, ListRenderItemInfo, View } from "react-native";
+import { ActivityIndicator, FlatList, ListRenderItemInfo } from "react-native";
+import { colors } from "../../assets/colors";
 import OficinaCard from "../../components/OficinaCard";
 
 import { API } from "../../services/api";
@@ -9,7 +10,7 @@ import { OficinaCardProps } from "../../types";
 import { Container } from "./styles";
 
 const OficinasScreen = () => {
-  const [OficinaList, setOficinaList] = useState([]);
+  const [OficinaList, setOficinaList] = useState();
 
   function fetchOficinaList() {
     API.get('/Api/Oficina?codigoAssociacao=601&cpfAssociado=""')
@@ -42,11 +43,15 @@ const OficinasScreen = () => {
   return (
     <>
       <Container>
-        <FlatList
-          data={OficinaList}
-          renderItem={RenderItem}
-          keyExtractor={(item) => item.Id}
-        />
+        {OficinaList ? (
+          <FlatList
+            data={OficinaList}
+            renderItem={RenderItem}
+            keyExtractor={(item) => item.Id}
+          />
+        ) : (
+          <ActivityIndicator size="large" color={colors.blue} />
+        )}
       </Container>
     </>
   );

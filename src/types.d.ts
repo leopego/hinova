@@ -14,3 +14,9 @@ export interface DetailsCardProps {
   title: string;
   icon: "Email" | "Localizacao" | "Telefone";
 }
+
+export interface FormDataProps {
+  nome: string;
+  telefone: string;
+  email: string;
+}

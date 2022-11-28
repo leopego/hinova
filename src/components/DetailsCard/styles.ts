@@ -1,12 +1,13 @@
 import { RFValue } from "react-native-responsive-fontsize";
 import styled from "styled-components/native";
+import { colors } from "../../assets/colors";
 
 export const Container = styled.View`
   overflow: hidden;
   border-radius: 6px;
   margin-top: ${RFValue(10)}px;
   width: 100%;
-  background-color: #f7f7f8;
+  background-color: ${colors.gray};
   flex-direction: row;
   align-items: center;
 `;
@@ -18,7 +19,7 @@ export const Title = styled.Text`
 `;
 
 export const IconContainer = styled.View`
-  background-color: #0066ff;
+  background-color: ${colors.blue};
   padding: ${RFValue(10)}px;
 `;
 

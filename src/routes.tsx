@@ -7,6 +7,7 @@ import OficinasScreen from "./screens/oficinas";
 import IndicacaoScreen from "./screens/indicacao";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import OficinaDetailsScreen from "./screens/oficinaDetails";
+import { colors } from "./assets/colors";
 
 const Tab = createBottomTabNavigator();
 
@@ -17,7 +18,7 @@ const Routes = () => {
         screenOptions={{
           headerShown: true,
           headerStyle: {
-            backgroundColor: "#0066ff",
+            backgroundColor: colors.blue,
           },
           headerTitleStyle: {
             color: "#FFF",
@@ -46,7 +47,7 @@ const OficinaRoute = () => {
     <Stack.Navigator
       screenOptions={{
         headerStyle: {
-          backgroundColor: "#0066ff",
+          backgroundColor: colors.blue,
         },
         headerTitleStyle: {
           color: "#FFF",

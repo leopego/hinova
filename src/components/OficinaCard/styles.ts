@@ -1,10 +1,11 @@
 import { RFValue } from "react-native-responsive-fontsize";
 import styled from "styled-components/native";
+import { colors } from "../../assets/colors";
 
 export const Container = styled.TouchableOpacity`
   width: 100%;
   margin-bottom: ${RFValue(14)}px;
-  background-color: #f7f7f8;
+  background-color: ${colors.gray};
   border-radius: 10px;
   overflow: hidden;
   align-items: center;
@@ -53,7 +54,7 @@ export const LocationWrapper = styled.View`
   padding: ${RFValue(8)}px;
   justify-content: flex-start;
   align-items: center;
-  background-color: #0066ff;
+  background-color: ${colors.blue};
 `;
 
 export const Location = styled.Text`

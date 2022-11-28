@@ -1,5 +1,6 @@
 import { RFValue } from "react-native-responsive-fontsize";
 import styled from "styled-components/native";
+import { colors } from "../../assets/colors";
 
 export const ContainerDetails = styled.View`
   flex: 1;
@@ -9,7 +10,7 @@ export const ContainerDetails = styled.View`
 export const ImagesContainer = styled.View`
   width: 100%;
   height: ${RFValue(200)}px;
-  background-color: #f7f7f8;
+  background-color: ${colors.gray};
   justify-content: center;
   align-items: center;
 `;

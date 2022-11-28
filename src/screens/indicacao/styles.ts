@@ -1,5 +1,6 @@
 import { RFValue } from "react-native-responsive-fontsize";
 import styled from "styled-components/native";
+import { colors } from "../../assets/colors";
 
 export const Container = styled.View`
   flex: 1;
@@ -11,7 +12,7 @@ export const Container = styled.View`
 export const Input = styled.TextInput`
   width: 100%;
   height: ${RFValue(40)}px;
-  background-color: #f7f7f8;
+  background-color: ${colors.gray};
   border-radius: 10px;
   padding-left: ${RFValue(12)}px;
   margin-top: ${RFValue(12)}px;
@@ -21,7 +22,7 @@ export const Enviar = styled.TouchableOpacity`
   margin-top: ${RFValue(12)}px;
   width: 100%;
   height: ${RFValue(40)}px;
-  background-color: #0066ff;
+  background-color: ${colors.blue};
   justify-content: center;
   align-items: center;
   border-radius: 10px;
